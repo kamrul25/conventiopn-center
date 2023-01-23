@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Convention Center</title>
+    <script
+      src="https://kit.fontawesome.com/28d93e825b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="font-poppins fixed top-0 left-0 right-0 bg-white h-20">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center w-full max-w-6xl mx-auto"
+      >
+        <h1 class="text-xl md:text-3xl font-extrabold my-4">
+          Abacus Convention Center
+        </h1>
+        <ul class="flex gap-2 md:gap-5 list-none font-semibold">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact </a></li>
+          <li><a href="#">Subscribe</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- banner section -->
+    <section class="w-full mb-20">
+      <div
+        class="bg-[url('./images/banner.png')] bg-cover h-[500px] mt-20 w-full"
+      >
+        <div class="space-y-4 font-poppins relative top-1/2 left-1/3">
+          <h1 class="text-white text-2xl md:text-3xl font-extrabold uppercase">
+            The perfect venue for your
+          </h1>
+          <h1 class="text-white text-2xl md:text-3xl font-extrabold uppercase">
+            next event
+          </h1>
+          <p class="text-white text-base font-normal ml-10">
+            Amet minim mollit non deserunt ullamco est sit aliqua <br />
+            dolor do amet sint. Velit officia consequat duis enim velit
+          </p>
+          <button class="text-blue-400 text-base bg-white py-3 px-5 ml-44">
+            Book Now
+          </button>
+        </div>
+      </div>
+    </section>
+    <main class="container mx-auto">
+      <section class="container mx-auto my-10">
+        <div>
+          <div class="md:flex justify-center items-center gap-12">
+            <div>
+              <img
+                src="./images/wedding.png"
+                class="w-[546px] h-[364px]"
+                alt=""
+              />
+            </div>
+            <div class="font-poppins space-y-4">
+              <h2 class="text-3xl font-extrabold">Every moment is Precious</h2>
+              <p class="text-base text-[#6C6C6C] font-bold">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <button
+                class="text-white bg-[#3F87F5] text-sm py-2 px-5 rounded-xl"
+              >
+                Explore our album
+                <img src="./icons/arrow-forward 1.svg" class="inline" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- package section -->
+      <section class="container mx-auto my-10">
+        <div>
+          <h1 class="font-poppins font-extrabold text-3xl text-center">
+            Our Package
+          </h1>
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-4 mt-10"
+          >
+            <div class="font-poppins py-10 px-5 space-y-4">
+              <p class="text-xl font-extrabold">$300</p>
+              <h3 class="text-xl font-bold">Business Fair</h3>
+              <p class="text-base text-[#848199]">
+                For most businesses event <br />like book fair, craft fair.
+              </p>
+              <p class="text-base text-[#848199]">
+                <i class="fa-solid fa-check"></i>limited space access
+              </p>
+              <p class="text-base text-[#848199]">
+                <i class="fa-solid fa-check"></i>Secuirty facility
+              </p>
+              <p class="text-base text-[#848199]">
+                <i class="fa-solid fa-check"></i>Secuirty facility
+              </p>
+              <p class="text-base text-[#848199]">
+                <i class="fa-solid fa-check"></i>Decoration design
+              </p>
+              <p class="text-base text-[#848199]">
+                <i class="fa-solid fa-check"></i>Per day bill
+              </p>
+              <button
+                class="text-xs text-[#3F87F5] bg-[#F496D1] bg-opacity-10 rounded-2xl py-5 px-auto w-44"
+              >
+                Choose Plan
+              </button>
+            </div>
+            <div class="font-poppins py-10 px-5 space-y-4">
+              <p class="text-xl font-extrabold">$500</p>
+              <h3 class="text-xl font-bold">Wedding Basic</h3>
+              <p class="text-base text-[#848199]">
+                For weddings with basic plan <br />
+                and limited item
+              </p>
+              <p class="text-base text-[#848199] space-x-2">
+                <i class="fa-solid fa-check"></i>limited space access
+              </p>
+              <p class="text-base text-[#848199] space-x-2">
+                <i class="fa-solid fa-check"></i>Secuirty facility
+              </p>
+              <p class="text-base text-[#848199] space-x-2">
+                <i class="fa-solid fa-check"></i>Secuirty facility
+              </p>
+              <p class="text-base text-[#848199] space-x-2">
+                <i class="fa-solid fa-check"></i>Decoration design
+              </p>
+              <p class="text-base text-[#848199] space-x-2">
+                <i class="fa-solid fa-check"></i>Per day bill
+              </p>
+              <button
+                class="text-xs text-[#3F87F5] bg-[#F496D1] bg-opacity-10 rounded-2xl py-5 px-auto w-44"
+              >
+                Choose Plan
+              </button>
+            </div>
+            <div
+              class="font-poppins text-white rounded-3xl bg-[#3F87F5] shadow-md space-y-4 py-5 px-4"
+            >
+              <div>
+                <p
+                  class="relative -top-8 left-[200px] text-xs bg-red-600 rounded-lg p-3 w-fit text-white"
+                >
+                  Hot
+                </p>
+              </div>
+              <p class="text-2xl font-extrabold">$800</p>
+              <h3 class="text-2xl font-bold">Wedding Plus</h3>
+              <p class="text-base">
+                For weddings with basic plan <br />
+                and limited item
+              </p>
+              <p class="text-base text-white ]">
+                <i class="fa-solid fa-check px-2"></i>limited space access
+              </p>
+              <p class="text-base text-white ]">
+                <i class="fa-solid fa-check px-2"></i>Secuirty facility
+              </p>
+              <p class="text-base text-white ]">
+                <i class="fa-solid fa-check px-2"></i>Secuirty facility
+              </p>
+              <p class="text-base text-white ]">
+                <i class="fa-solid fa-check px-2"></i>Decoration design
+              </p>
+              <p class="text-base text-white ]">
+                <i class="fa-solid fa-check px-2"></i>Per day bill
+              </p>
+              <button
+                class="text-xs text-[#3F87F5] bg-[#FFFFFF] rounded-3xl py-5 px-auto w-44"
+              >
+                Choose Plan
+              </button>
+            </div>
+            <div class="font-poppins py-10 px-5 space-y-4">
+              <p class="text-xl font-extrabold">$1200</p>
+              <h3 class="text-xl font-bold">Corporate event</h3>
+              <p class="text-base text-[#848199]">
+                For weddings with basic plan <br />
+                and limited item
+              </p>
+              <p class="text-base text-[#848199]">
+                <i class="fa-solid fa-check"></i>limited space access
+              </p>
+              <p class="text-base text-[#848199]">
+                <i class="fa-solid fa-check"></i>Secuirty facility
+              </p>
+              <p class="text-base text-[#848199]">
+                <i class="fa-solid fa-check"></i>Secuirty facility
+              </p>
+              <p class="text-base text-[#848199]">
+                <i class="fa-solid fa-check"></i>Decoration design
+              </p>
+              <p class="text-base text-[#848199]">
+                <i class="fa-solid fa-check"></i>Per day bill
+              </p>
+              <button
+                class="text-xs text-[#3F87F5] bg-[#F496D1] bg-opacity-10 rounded-2xl py-5 px-auto w-44"
+              >
+                Choose Plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- client section -->
+      <section class="container mx-auto">
+        <div class="my-20">
+          <h1 class="text-3xl font-poppins font-extrabold text-center">
+            Happy Client Says
+          </h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-4">
+          <div class="font-poppins text-center p-5 space-y-4">
+            <p class="text-sm text-[#6C6C6C]">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+            <img src="./images/person 2.png" class="mx-auto" alt="" />
+            <h3 class="text-sm font-semibold">Regina Miles</h3>
+            <p class="text-sm text-[#6C6C6C]">Banker</p>
+          </div>
+          <div class="font-poppins text-center p-5 space-y-4">
+            <p class="text-sm text-[#6C6C6C]">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+            <img src="./images/person 3.png" class="mx-auto" alt="" />
+            <h3 class="text-sm font-semibold">Regina Miles</h3>
+            <p class="text-sm text-[#6C6C6C]">Banker</p>
+          </div>
+          <div class="font-poppins text-center p-5 space-y-4">
+            <p class="text-sm text-[#6C6C6C]">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+            <img src="./images/person 1.png" class="mx-auto" alt="" />
+            <h3 class="text-sm font-semibold">Regina Miles</h3>
+            <p class="text-sm text-[#6C6C6C]">Banker</p>
+          </div>
+        </div>
+      </section>
+      <section class="w-full max-w-6xl mx-auto my-5">
+        <div class="">
+          <img src="./images/people.png" class="w-full mx-auto pl-4" alt="">
+        </div>
+      </section>
+    </main>
+    <!-- footer part -->
+    <footer class=" bg-black ">
+        <div class="  h-64 flex flex-col md:flex-row-reverse justify-around items-center ">
+          <div class="space-y-2">
+            <h3 class="text-white">Get the App </h3>
+            <div class=" flex justify-center items-center gap-4 py-3   border-2 border-white rounded-xl w-[200px]">
+              <i class="fa-brands fa-apple text-white fa-2x"></i>
+              <div class="text-white font-poppins ">
+                <p class="text-xs font-semibold">Download on the </p>
+                <h1 class="text-base font-extrabold">App Store</h1>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <p class="text-[#D9DBE1]">&copy; 2020 bike. All rights reserved</p>
+          </div>
+        </div>
+    </footer>
+  </body>
+</html>
